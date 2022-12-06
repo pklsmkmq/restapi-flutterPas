@@ -11,6 +11,7 @@ var mulyaRouter = require('./routes/mulya');
 var donasiRouter = require('./routes/donasi');
 var travelRouter = require('./routes/travel');
 var zaidanRouter = require('./routes/zaidan');
+var rentalRouter = require('./routes/rental');
 
 var app = express();
 
@@ -28,5 +29,6 @@ app.use('/mulya', mulyaRouter);
 app.use('/donasi', donasiRouter);
 app.use('/travel', travelRouter);
 app.use('/zaidan', zaidanRouter);
+app.use('/rental', rentalRouter);
 
 module.exports = app;
