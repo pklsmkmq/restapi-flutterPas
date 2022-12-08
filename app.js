@@ -12,6 +12,7 @@ var donasiRouter = require('./routes/donasi');
 var travelRouter = require('./routes/travel');
 var zaidanRouter = require('./routes/zaidan');
 var rentalRouter = require('./routes/rental');
+var fathanRouter = require('./routes/fathan');
 
 var app = express();
 
@@ -30,5 +31,6 @@ app.use('/donasi', donasiRouter);
 app.use('/travel', travelRouter);
 app.use('/zaidan', zaidanRouter);
 app.use('/rental', rentalRouter);
+app.use('/fathan', fathanRouter);
 
 module.exports = app;
